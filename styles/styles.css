@@ -40,6 +40,8 @@ nav a{
 
 h1 {
     color: var(--color-title-general);
+    padding-top: 1rem;
+    margin-left: 10px;
 }
 
 main img {
