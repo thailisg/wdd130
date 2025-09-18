@@ -1,5 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root{
-    --main-width: 840px;
+    --main-width: 640px;
 
     --nav-background-color: darkblue;
     --nav-color: white;
@@ -8,6 +14,13 @@
 
     --aside-background-color:rgb(214, 209, 209);
 
+    --background-color-transparent: rgba(250, 249, 249, 0.466);
+
+}
+
+body {
+    font-size: 16px;
+    font-family: Roboto, Arial, sans-serif ;
 }
 
 main {
@@ -35,25 +48,35 @@ main img {
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem ;
+}
+
+main ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1rem;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 40px;
 }
 
 p {
     padding: 0;
+    margin: 1rem;
 }
 
-aside{
-    width: 20rem;
-    background-color: var(--aside-background-color);
-    color: #333;
+aside {
     text-align: center;
-    margin: 1rem;
-    border: 1px solid rgb(0, 0, 0 / 0.2);
-    padding: 1rem;
-
+    position: relative;
 }
 
 aside h2{
+    background-color: var(--background-color-transparent) ;
     color: var(--color-title-general);
+    position: absolute;
+    top: 30px;
+    left: 63px;
 }
 
 aside img{
@@ -71,3 +94,17 @@ footer{
     text-align: center;
 }
 
+/* Class Selectors */
+
+.box {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0,.1);
+    padding: 1rem;
+    background-color: var(--aside-background-color);
+    color: #333;
+}
+
+.indent {
+    padding-left: 1rem;
+}
