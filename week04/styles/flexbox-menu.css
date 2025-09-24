@@ -17,6 +17,11 @@ nav ul {
     align-items: center;
 }
 
+nav li{
+    flex: 1;
+
+}
+
 nav a {
     display: block;
     color: #fff;
@@ -25,10 +30,15 @@ nav a {
     text-decoration: none;
 }
 
+.paragraph {
+    display: flex;
+    justify-content: space-between;
+}
+
 p {
-    margin: 1rem;
+    margin: 1em;
     border: 1px solid rgb(0 0 0 / 10%);
-    padding: 1rem;
+    padding: 1em;
     background-color: #bed;
     max-width: 400px;
 }
@@ -52,4 +62,12 @@ p {
 
 #devtools-btn:active {
     background-color: #2a3a4a;
+}
+
+@media (max-width: 750px){
+
+    nav li{
+        flex: 100%;
+    }
+
 }
