@@ -172,7 +172,7 @@ footer p{
 
 .adventures-content {
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
