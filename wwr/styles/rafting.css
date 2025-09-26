@@ -104,13 +104,6 @@ section {
     color: var(--text-color-light);
 }
 
-.history-content {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    gap: 10px;
-}
-
 #history p{
     text-align: justify;
 
@@ -130,29 +123,8 @@ section {
     color: var(--text-color-light);
 }
 
-.adventures-content {
-    display: flex;
-    flex: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.adventures-content figure{
-    flex: 1;
-    text-align: center;
-    margin: 0;
-}
-
 figcaption{
     color: var(--text-color-light);
-}
-
-.adventures-content img{
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 5px;
-    padding: 5px;
 }
 
 footer{
@@ -190,6 +162,34 @@ footer p{
 .hero article img{
     float: right;
     width: 125px;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.adventures-content {
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adventures-content figure{
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.adventures-content img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .socialmedia{
