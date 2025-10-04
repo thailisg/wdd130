@@ -311,10 +311,14 @@ textarea {
 
 /*employed images*/
 
+
 .adventures-content.employees {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
+    margin: 0 auto;
+    width: fit-content;
 }
 
 .adventures-content.employees figure {
