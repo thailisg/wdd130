@@ -16,49 +16,30 @@
         <h1>WDD | HTML form - User Poll</h1>
     </header>
     <main>
-        <form action="">
+        <form action="" id="form-contact">
             <fieldset>
-                <legend>
-                    Contact Information
-                </legend>
-                <div class="form-item column2">
-                    <label for="fullname">fullname:</label>
+                <legend>Contact Information</legend>
+                <div class="form-item">
+                    <label for="fullname">Name:</label>
                     <input type="text" id="fullname" name="fullname">
                 </div>
-                <div class="form-item column2">
+                <div class="form-item">
                     <label for="useremail">Email:</label>
                     <input type="text" id="useremail" name="useremail">
                 </div>
             </fieldset>
-            <fieldset>
-                <legend>
-                    Question
-                </legend>
-                <div class="form-item column1">
-                    <label for="browser">What is your favorite internet browser?</label>
-                    <select id="browser" name="browser">
-                        <option value="chrome">Chrome</option>
-                        <option value="firefox">Firefox</option>
-                        <option value="safari">Safari</option>
-                        <option value="edge">Edge</option>
-                        <option value="brave">Brave</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
 
-                <div class="form-item column1">
-                    <label for="pet">Do you have a household pet?</label>
-                    <input type="checkbox" id="pet" name="pet">
-                </div>
-                <div class="form-item column1 ">
-                    <label for="feedback">List the places you have lived:</label>
-                </div>
-                <textarea id="feedback" name="feedback" rows="4"
-                    placeholder="Stillwater Florida, Amsterdam Netherlands, Tibuktu Mali"></textarea>
-
-
+            <fieldset class="contact-radio">
+                <legend>Purpose Message:</legend>
+                <label><input type="radio" name="purpose" value="inquiry" required>General Inquiry</label>
+                <label><input type="radio" name="purpose" value="reservation" required>Reservation Question</label>
+                <label><input type="radio" name="purpose" value="suggestion" required>Website Suggestion</label>
             </fieldset>
-            <button type="submit">Submit Poll</button>
+
+            <div class="form-item">
+                <label for="feedback">Message:</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Type here"></textarea>
+            </div>
         </form>
     </main>
     <footer>
