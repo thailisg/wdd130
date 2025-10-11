@@ -334,3 +334,99 @@ textarea {
 .adventures-content.employees figcaption {
     text-align: center;
 }
+
+/*---------------home Page-------------*/
+
+.form-home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.form-container, .go-trip-container {
+    background-color: var(--color1);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#home-id-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#home-id-form .form-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+#home-id-form input, #home-id-form button {
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 1rem;
+}
+
+#home-id-form button {
+    background-color: var(--color2);
+    color: var(--text-color-light);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.go-trip-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.go-trip-button {
+    background-color: var(--color3);
+    color: var(--text-color-light);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.business-information {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.business-item {
+    background-color: var(--color1);
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.business-item img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.business-text {
+    text-align: left;
+}
+
+.business-text h3 {
+    margin-bottom: 8px;
+}
+
+.business-text p {
+    margin: 0;
+}
